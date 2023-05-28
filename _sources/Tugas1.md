@@ -1,4 +1,4 @@
-# Tugas Load data
+# Load data
 # Cara load data csv ke excel
 - pastikan anda sudah memiliki data iris
 - kemudian buka Excel 
