@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>k - nearest neighbour &#8212; Illiya Rosida</title>
+    <title>k - nearest neighbour (PCA) &#8212; Illiya Rosida</title>
   
   
   
@@ -63,8 +63,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'PCA_KNN';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="NaiveBayes" href="PCA_Naive.html" />
-    <link rel="prev" title="Artificial neural network backpropagation" href="PCA_ANNBP.html" />
+    <link rel="next" title="Artificial neural network backpropagation (PCA)" href="PCA_ANNBP.html" />
+    <link rel="prev" title="NaiveBayes (PCA)" href="PCA_Naive.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -181,9 +181,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <li class="toctree-l1"><a class="reference internal" href="UTS.html">UTS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="PCA_ANNBP.html">Artificial neural network backpropagation</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">k - nearest neighbour</a></li>
-<li class="toctree-l1"><a class="reference internal" href="PCA_Naive.html">NaiveBayes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PCA_Naive.html">NaiveBayes (PCA)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">k - nearest neighbour (PCA)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PCA_ANNBP.html">Artificial neural network backpropagation (PCA)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PCA_DT.html">Decision Tree (PCA)</a></li>
 </ul>
 
     </div>
@@ -396,7 +397,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>k - nearest neighbour</h1>
+    <h1>k - nearest neighbour (PCA)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -410,8 +411,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="k-nearest-neighbour">
-<h1>k - nearest neighbour<a class="headerlink" href="#k-nearest-neighbour" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="k-nearest-neighbour-pca">
+<h1>k - nearest neighbour (PCA)<a class="headerlink" href="#k-nearest-neighbour-pca" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -431,7 +432,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-76178ef4-6adc-4f9b-9382-4fc9a6e8a149">
+  <div id="df-e5ed8a83-38f3-43c0-a7c7-d5091592a5b6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -502,7 +503,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-76178ef4-6adc-4f9b-9382-4fc9a6e8a149')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e5ed8a83-38f3-43c0-a7c7-d5091592a5b6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -553,12 +554,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-76178ef4-6adc-4f9b-9382-4fc9a6e8a149 button.colab-df-convert');
+          document.querySelector('#df-e5ed8a83-38f3-43c0-a7c7-d5091592a5b6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-76178ef4-6adc-4f9b-9382-4fc9a6e8a149');
+          const element = document.querySelector('#df-e5ed8a83-38f3-43c0-a7c7-d5091592a5b6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -927,7 +928,7 @@ Eigenvelues
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-4b1ed7a3-48e2-4e3d-8b03-c360fe238799">
+  <div id="df-5fd6e271-0f80-4647-a4b6-9b3f7f88e6a8">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1011,7 +1012,7 @@ Eigenvelues
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-4b1ed7a3-48e2-4e3d-8b03-c360fe238799')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5fd6e271-0f80-4647-a4b6-9b3f7f88e6a8')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1062,12 +1063,12 @@ Eigenvelues
 
       <script>
         const buttonEl =
-          document.querySelector('#df-4b1ed7a3-48e2-4e3d-8b03-c360fe238799 button.colab-df-convert');
+          document.querySelector('#df-5fd6e271-0f80-4647-a4b6-9b3f7f88e6a8 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-4b1ed7a3-48e2-4e3d-8b03-c360fe238799');
+          const element = document.querySelector('#df-5fd6e271-0f80-4647-a4b6-9b3f7f88e6a8');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1097,7 +1098,7 @@ Eigenvelues
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2059054b-ac8c-4fcb-9c6e-52ce4374d93c">
+  <div id="df-3e285fb5-9595-4a0d-95ff-579a6f729611">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1193,7 +1194,7 @@ Eigenvelues
 </table>
 <p>150 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2059054b-ac8c-4fcb-9c6e-52ce4374d93c')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3e285fb5-9595-4a0d-95ff-579a6f729611')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1244,12 +1245,12 @@ Eigenvelues
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2059054b-ac8c-4fcb-9c6e-52ce4374d93c button.colab-df-convert');
+          document.querySelector('#df-3e285fb5-9595-4a0d-95ff-579a6f729611 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2059054b-ac8c-4fcb-9c6e-52ce4374d93c');
+          const element = document.querySelector('#df-3e285fb5-9595-4a0d-95ff-579a6f729611');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1281,7 +1282,7 @@ Eigenvelues
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8aa24d7c-f88b-41c2-936d-87a6d263836b">
+  <div id="df-ca8070ae-b279-4e2b-b112-7563dc7a94ca">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1340,7 +1341,7 @@ Eigenvelues
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8aa24d7c-f88b-41c2-936d-87a6d263836b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ca8070ae-b279-4e2b-b112-7563dc7a94ca')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1391,12 +1392,12 @@ Eigenvelues
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8aa24d7c-f88b-41c2-936d-87a6d263836b button.colab-df-convert');
+          document.querySelector('#df-ca8070ae-b279-4e2b-b112-7563dc7a94ca button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8aa24d7c-f88b-41c2-936d-87a6d263836b');
+          const element = document.querySelector('#df-ca8070ae-b279-4e2b-b112-7563dc7a94ca');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1494,7 +1495,7 @@ Eigenvelues
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bc5d2008-8986-4857-b769-ccc514cbfba4">
+  <div id="df-84c98e17-7da4-4918-897b-fc953297144c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1672,7 +1673,7 @@ Eigenvelues
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bc5d2008-8986-4857-b769-ccc514cbfba4')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-84c98e17-7da4-4918-897b-fc953297144c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1723,12 +1724,12 @@ Eigenvelues
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bc5d2008-8986-4857-b769-ccc514cbfba4 button.colab-df-convert');
+          document.querySelector('#df-84c98e17-7da4-4918-897b-fc953297144c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bc5d2008-8986-4857-b769-ccc514cbfba4');
+          const element = document.querySelector('#df-84c98e17-7da4-4918-897b-fc953297144c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1783,20 +1784,20 @@ Eigenvelues
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="PCA_ANNBP.html"
+       href="PCA_Naive.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Artificial neural network backpropagation</p>
+        <p class="prev-next-title">NaiveBayes (PCA)</p>
       </div>
     </a>
     <a class="right-next"
-       href="PCA_Naive.html"
+       href="PCA_ANNBP.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">NaiveBayes</p>
+        <p class="prev-next-title">Artificial neural network backpropagation (PCA)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
