@@ -18,3 +18,5 @@
 - Nim    : 210411100051
 - Kelas  : Penambangan Data B
 - Prodi  : Teknik Informatika
+- Alamat : Kabupaten Pasuruan
+- Email  : illiyarosida11@gmail.com
